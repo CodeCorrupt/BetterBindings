@@ -1,0 +1,27 @@
+{
+    "bcc_set_btn": {
+        "cat": "vehicle",
+        "order": 54321,
+        "ctx": "vlua",
+        "onDown": "extensions.use('betterCruiseControl').setBtnDown()",
+        "onUp": "extensions.use('betterCruiseControl').setBtnUp()",
+        "title": "Better Cruise Control: Set",
+        "desc": "Sets the cruise control to current speed or reduces speed by 1"
+    },
+    "bcc_resume_btn": {
+        "cat": "vehicle",
+        "order": 54322,
+        "ctx": "vlua",
+        "onDown": "extensions.use('betterCruiseControl').resumeBtnDown()",
+        "title": "Better Cruise Control: Resume",
+        "desc": "Resume the cruise control to the last set speed or increases speed by 1"
+    },
+    "bcc_cancel_btn": {
+        "cat": "vehicle",
+        "order": 54323,
+        "ctx": "vlua",
+        "onDown": "extensions.use('betterCruiseControl').cancelBtnDown()",
+        "title": "Better Cruise Control: Cancel",
+        "desc": "Cancel active cruise control"
+    }
+}
