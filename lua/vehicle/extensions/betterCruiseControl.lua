@@ -49,9 +49,16 @@ local function cancelBtnDown()
   cc.setEnabled(false)
 end
 
+local function toggleEnableBtnDown()
+  local cc = extensions.use('cruiseControl')
+  local cfg = cc.getConfiguration()
+  cc.setEnabled(not cfg.isEnabled)
+end
+
 M.setBtnDown = setBtnDown
 M.setBtnUp = setBtnUp
 M.resumeBtnDown = resumeBtnDown
 M.cancelBtnDown = cancelBtnDown
+M.toggleEnableBtnDown = toggleEnableBtnDown
 
 return M
