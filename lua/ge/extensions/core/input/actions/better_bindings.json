@@ -1,67 +1,67 @@
 {
-    "bcc_set_btn": {
+    "bb_set_btn": {
         "cat": "vehicle",
         "order": 54321,
         "ctx": "vlua",
-        "onDown": "extensions.use('betterCruiseControl').setBtnDown()",
-        "onUp": "extensions.use('betterCruiseControl').setBtnUp()",
-        "title": "Better Cruise Control: Set/Decrease",
+        "onDown": "extensions.use('BetterBindings').setBtnDown()",
+        "onUp": "extensions.use('BetterBindings').setBtnUp()",
+        "title": "Better Bindings: Set/Decrease",
         "desc": "Sets the cruise control to current speed or reduces speed by 1"
     },
-    "bcc_resume_btn": {
+    "bb_resume_btn": {
         "cat": "vehicle",
         "order": 54322,
         "ctx": "vlua",
-        "onDown": "extensions.use('betterCruiseControl').resumeBtnDown()",
-        "title": "Better Cruise Control: Resume/Increase",
+        "onDown": "extensions.use('BetterBindings').resumeBtnDown()",
+        "title": "Better Bindings: Resume/Increase",
         "desc": "Resume the cruise control to the last set speed or increases speed by 1"
     },
-    "bcc_cancel_btn": {
+    "bb_cancel_btn": {
         "cat": "vehicle",
         "order": 54323,
         "ctx": "vlua",
-        "onDown": "extensions.use('betterCruiseControl').cancelBtnDown()",
-        "title": "Better Cruise Control: Cancel",
+        "onDown": "extensions.use('BetterBindings').cancelBtnDown()",
+        "title": "Better Bindings: Cancel",
         "desc": "Cancel cruise control"
     },
-    "bcc_toggle_enable_btn": {
+    "bb_toggle_enable_btn": {
         "cat": "vehicle",
         "order": 54324,
         "ctx": "vlua",
-        "onDown": "extensions.use('betterCruiseControl').toggleEnableBtnDown()",
-        "title": "Better Cruise Control: Toggle Enabled",
+        "onDown": "extensions.use('BetterBindings').toggleEnableBtnDown()",
+        "title": "Better Bindings: Toggle Enabled",
         "desc": "Toggle resume and cancel"
     },
-    "bcc_set_headlights_on": {
+    "bb_set_headlights_on": {
         "cat": "vehicle",
         "order": 54325,
         "ctx": "vlua",
         "onDown": "electrics.setLightsState(1)",
-        "title": "Better Cruise Control: Headlights On",
+        "title": "Better Bindings: Headlights On",
         "desc": "Turns on the headlights"
     },
-    "bcc_set_headlights_off": {
+    "bb_set_headlights_off": {
         "cat": "vehicle",
         "order": 54326,
         "ctx": "vlua",
         "onDown": "electrics.setLightsState(0)",
-        "title": "Better Cruise Control: Headlights Off",
+        "title": "Better Bindings: Headlights Off",
         "desc": "Turns off the headlights"
     },
-    "bcc_set_headlights_high": {
+    "bb_set_headlights_high": {
         "cat": "vehicle",
         "order": 54327,
         "ctx": "vlua",
         "onDown": "electrics.setLightsState(2)",
-        "title": "Better Cruise Control: High Beams On",
+        "title": "Better Bindings: High Beams On",
         "desc": "Turns on the high beams"
     },
-    "bcc_stop_turn_signal": {
+    "bb_stop_turn_signal": {
         "cat": "vehicle",
         "order": 54328,
         "ctx": "vlua",
         "onDown": "electrics.stop_turn_signal()",
-        "title": "Better Cruise Control: Cancel Turn Signals",
+        "title": "Better Bindings: Cancel Turn Signals",
         "desc": "Deactivates the active turn signal"
     }
 }

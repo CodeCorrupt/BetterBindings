@@ -1,14 +1,8 @@
--- This Source Code Form is subject to the terms of the bCDDL, v. 1.1.
--- If a copy of the bCDDL was not distributed with this
--- file, You can obtain one at http://beamng.com/bCDDL-1.1.txt
-
-
 local M = {}
 
 local cc_was_on = false
 
 local function setBtnDown()
-  log('D', 'betterCruiseControl', 'Set Button: Down')
   local cc = extensions.use('cruiseControl')
   local cfg = cc.getConfiguration()
   if cfg.isEnabled then
@@ -20,7 +14,6 @@ local function setBtnDown()
 end
 
 local function setBtnUp()
-  log('D', 'betterCruiseControl', 'Set Button: Up')
   local cc = extensions.use('cruiseControl')
   local cfg = cc.getConfiguration()
   local diffWhileHolding = (electrics.values.wheelspeed or 0) - cfg.targetSpeed
@@ -33,7 +26,6 @@ local function setBtnUp()
 end
 
 local function resumeBtnDown()
-  log('D', 'betterCruiseControl', 'Resume Button: Down')
   local cc = extensions.use('cruiseControl')
   local cfg = cc.getConfiguration()
   if cfg.isEnabled then
@@ -44,7 +36,6 @@ local function resumeBtnDown()
 end
 
 local function cancelBtnDown()
-  log('D', 'betterCruiseControl', 'Cancel Button: Down')
   local cc = extensions.use('cruiseControl')
   cc.setEnabled(false)
 end
