@@ -1,6 +1,7 @@
 local M = {}
 
 local cc_was_on = false
+local ONE_MPH = 0.44704
 
 local function setBtnDown()
   local cc = extensions.use('cruiseControl')
@@ -17,7 +18,7 @@ local function setBtnUp()
   local cc = extensions.use('cruiseControl')
   local cfg = cc.getConfiguration()
   local diffWhileHolding = (electrics.values.wheelspeed or 0) - cfg.targetSpeed
-  if cc_was_on and diffWhileHolding > -1/3.6 and diffWhileHolding <= 0 then
+  if cc_was_on and diffWhileHolding > -ONE_MPH and diffWhileHolding <= 0 then
     cc.changeSpeed(-1/3.6)
     cc.setEnabled(true)
   else
