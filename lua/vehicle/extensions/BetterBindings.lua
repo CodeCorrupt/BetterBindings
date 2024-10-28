@@ -53,4 +53,20 @@ M.resumeBtnDown = resumeBtnDown
 M.cancelBtnDown = cancelBtnDown
 M.toggleEnableBtnDown = toggleEnableBtnDown
 
+-- Additional logic needed for headlight toggle
+local lastLights = 0
+local function toggleHeadlightsHighDown()
+  local lights = electrics.values.lights_state
+  print("Lights: " .. lights or "nil")
+  print("Last Lights: " .. lastLights or "nil")
+  if lights == 2 then
+    electrics.setLightsState(lastLights)
+  else
+    lastLights = lights
+    electrics.setLightsState(2)
+  end
+end
+
+M.toggleHeadlightsHighDown = toggleHeadlightsHighDown
+
 return M
