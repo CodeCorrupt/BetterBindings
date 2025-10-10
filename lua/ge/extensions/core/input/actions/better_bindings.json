@@ -1,7 +1,7 @@
 {
     "bb_set_btn": {
-        "cat": "vehicle",
-        "order": 54321,
+        "cat": "BetterBindings",
+        "order": 1,
         "ctx": "vlua",
         "onDown": "extensions.use('BetterBindings').setBtnDown()",
         "onUp": "extensions.use('BetterBindings').setBtnUp()",
@@ -9,64 +9,64 @@
         "desc": "Sets the cruise control to current speed or reduces speed by 1"
     },
     "bb_resume_btn": {
-        "cat": "vehicle",
-        "order": 54322,
+        "cat": "BetterBindings",
+        "order": 2,
         "ctx": "vlua",
         "onDown": "extensions.use('BetterBindings').resumeBtnDown()",
         "title": "Better Bindings: Resume/Increase",
         "desc": "Resume the cruise control to the last set speed or increases speed by 1"
     },
     "bb_cancel_btn": {
-        "cat": "vehicle",
-        "order": 54323,
+        "cat": "BetterBindings",
+        "order": 3,
         "ctx": "vlua",
         "onDown": "extensions.use('BetterBindings').cancelBtnDown()",
         "title": "Better Bindings: Cancel",
         "desc": "Cancel cruise control"
     },
     "bb_toggle_enable_btn": {
-        "cat": "vehicle",
-        "order": 54324,
+        "cat": "BetterBindings",
+        "order": 4,
         "ctx": "vlua",
         "onDown": "extensions.use('BetterBindings').toggleEnableBtnDown()",
         "title": "Better Bindings: Toggle Enabled",
         "desc": "Toggle resume and cancel"
     },
     "bb_set_headlights_on": {
-        "cat": "vehicle",
-        "order": 54325,
+        "cat": "BetterBindings",
+        "order": 5,
         "ctx": "vlua",
         "onDown": "electrics.setLightsState(1)",
         "title": "Better Bindings: Headlights On",
         "desc": "Turns on the headlights"
     },
     "bb_set_headlights_off": {
-        "cat": "vehicle",
-        "order": 54326,
+        "cat": "BetterBindings",
+        "order": 6,
         "ctx": "vlua",
         "onDown": "electrics.setLightsState(0)",
         "title": "Better Bindings: Headlights Off",
         "desc": "Turns off the headlights"
     },
     "bb_set_headlights_high": {
-        "cat": "vehicle",
-        "order": 54327,
+        "cat": "BetterBindings",
+        "order": 7,
         "ctx": "vlua",
         "onDown": "electrics.setLightsState(2)",
         "title": "Better Bindings: High Beams On",
         "desc": "Turns on the high beams"
     },
     "bb_toggle_headlights_high": {
-        "cat": "vehicle",
-        "order": 54328,
+        "cat": "BetterBindings",
+        "order": 8,
         "ctx": "vlua",
         "onDown": "extensions.use('BetterBindings').toggleHeadlightsHighDown()",
         "title": "Better Bindings: High Beams Toggle",
         "desc": "Toggles between high beams and the previous state"
     },
     "bb_stop_turn_signal": {
-        "cat": "vehicle",
-        "order": 54329,
+        "cat": "BetterBindings",
+        "order": 9,
         "ctx": "vlua",
         "onDown": "electrics.stop_turn_signal()",
         "title": "Better Bindings: Cancel Turn Signals",
